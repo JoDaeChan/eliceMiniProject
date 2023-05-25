@@ -1,0 +1,83 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  padding: 10px;
+  margin: auto;
+  width: 960px;
+  font-family: TAEBAEK milkyway, sans-serif;
+}
+/***************  메뉴바  ***************/
+header {
+  background-color: grey;
+  border-bottom-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  position: fixed;
+  top: 0;
+  width: 960px;
+  z-index: 1;
+  font-family: "Karla", sans-serif;
+}
+
+.menu:hover {
+  background-color: darkgrey;
+  letter-spacing: 4px;
+  transition: all 0.5s ease;
+}
+.menu:not(:hover) {
+  transition: all 0.5s ease;
+}
+
+nav ul {
+  display: flex;
+}
+
+nav ul li {
+  list-style: none;
+  padding: 15px;
+}
+#menu-profile {
+  margin-left: 10px;
+}
+
+nav a {
+  text-decoration: none;
+  color: white;
+}
+/***************  메인  ***************/
+main {
+  padding: 40px;
+  margin-top: 40px;
+  text-align: center;
+}
+
+.mainLogo img:hover {
+  transform: scale(1.2);
+  transition: transform 1s ease;
+}
+.mainLogo img:not(:hover) {
+  transition: transform 1s ease;
+}
+
+/***************  메인 그리드  ***************/
+#table {
+  margin-top: 40px;
+  display: grid;
+  grid-template-columns: repeat(2, 5fr);
+  grid-gap: 50px;
+}
+.table1 {
+  text-align: right;
+}
+.table2 {
+  text-align: left;
+}
+/***************  발꼬락  ***************/
+footer {
+  padding: 40px;
+  background-color: lightgray;
+  border-top-left-radius: 20px;
+  border-top-right-radius: 20px;
+  font-family: "Karla", sans-serif;
+}
